@@ -4,8 +4,8 @@ GI_TEMP=$GI_HOME/gitemp # temp directory
 variables_file=$GI_HOME/variables.sh # variables file
 
 declare -a fedora_supp_releases=(38 39) # list supported Fedora releases
-declare -a gi_versions=(3.2.13 3.3.0 3.3.5) # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-guardium-insights/index.yaml
-declare -a gi_cases=(2.2.13 2.3.0 2.3.5)
+declare -a gi_versions=(3.2.13 3.3.1 3.3.5) # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-guardium-insights/index.yaml
+declare -a gi_cases=(2.2.13 2.3.1 2.3.5)
 declare -a ics_versions=(3.19.18 3.19.19 3.19.21 3.23.12) # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-cp-common-services/index.yaml
 declare -a ics_cases=(1.15.18 1.15.19 1.15.21 1.19.12)
 declare -a bundled_in_gi_ics_versions=(2 2 2)
