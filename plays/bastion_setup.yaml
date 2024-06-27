@@ -552,7 +552,11 @@
     cmd: "{{ item }}"
   with_items:
     - "nmcli c modify {{ bas_int_name.stdout }} ipv4.dns \"{{ bas_ip }}\""
-
+    
+- name: Stop systemd-resolved
+  ansible.builtin.command:
+    cmd: "sudo systemctl stop systemd-resolved"
+    
 - name: Start and enable dnsmasq
   ansible.builtin.service:
     name: dnsmasq
