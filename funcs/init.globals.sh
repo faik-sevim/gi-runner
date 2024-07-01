@@ -6,8 +6,8 @@ variables_file=$GI_HOME/variables.sh # variables file
 declare -a fedora_supp_releases=(38 39) # list supported Fedora releases
 declare -a gi_versions=(3.2.13 3.3.1 3.3.5) # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-guardium-insights/index.yaml
 declare -a gi_cases=(2.2.13 2.3.1 2.3.5)
-declare -a ics_versions=(3.19.18 3.19.21 3.19.22 3.23.12) # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-cp-common-services/index.yaml
-declare -a ics_cases=(1.15.18 1.15.21 1.15.22 1.19.12)
+declare -a ics_versions=(3.19.21 3.19.22 4.7.0) # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-cp-common-services/index.yaml
+declare -a ics_cases=(1.15.21 1.15.22 4.7.0)
 declare -a bundled_in_gi_ics_versions=(2 2 2)
 declare -a ocp_versions=(0 1)
 declare -a ocp_major_versions=(4.12 4.14)
@@ -41,7 +41,7 @@ galaxy_soft=("community-general-${galaxy_community_general}" "ansible-utils-${ga
 
 matchbox_version=0.10.0 # https://github.com/poseidon/matchbox
 
-ibm_pak_version=1.12.0 # https://github.com/IBM/ibm-pak
+ibm_pak_version=1.15.1 # https://github.com/IBM/ibm-pak
 
 rook_operator_version="1.12.11" # https://github.com/rook/rook
 rook_ceph_version="17.2.6"
@@ -52,12 +52,12 @@ px_channel="stable"
 px_version="3.1.0"
 
 cp4s_channel="1.10"
-cp4s_versions=("1.10.19") # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-cp-security/index.yaml
-cp4s_cases=("1.0.44")
+cp4s_versions=("1.10.22") # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-cp-security/index.yaml
+cp4s_cases=("1.0.47")
 cp4s_case_name="ibm-cp-security"
 cp4s_case_inventory_setup="ibmSecurityOperatorSetup"
 
 edr_case_name="ibm-security-edr"
-edr_cases=("1.0.2") # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-security-edr/index.yaml
-edr_versions=("1.0.2") 
+edr_cases=("1.0.8") # https://github.com/IBM/cloud-pak/blob/master/repo/case/ibm-security-edr/index.yaml
+edr_versions=("1.0.0") 
 edr_case_inventory_setup="ibmSecurityEdrOperatorSetup"
