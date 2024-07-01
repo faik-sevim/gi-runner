@@ -1,8 +1,8 @@
 <B>Cloud Pak's installation automation tool on bare metal</B>
 <HR>
 <P>Automates OCP installation for releases: 4.12, 4.14
-<P>Automates CPFS installation for releases: 3.19.18, 3.19.19, 3.19.21, 3.23.12
-<P>Automates GI installation for releases: 3.2.13, 3.3.1, 3.3.5
+<P>Automates CPFS installation for releases: 4.7.0
+<P>Automates GI installation for releases: 3.3.5
 <P>Automates CP4S installation for 1.10 channel
 <P>Automates EDR installation ifor release 1.0.2 (online installation only because of bug in the images list)
 <P>Supports installation with direct access to the Internet, using proxy or air-gapped (restricted) approach
