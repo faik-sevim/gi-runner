@@ -93,7 +93,7 @@
   shell:
     cmd: "oc patch guardiuminsights {{ gi_namespace }} -n {{ gi_namespace }} --type json -p '[{\"op\": \"replace\", \"path\": \"/spec/guardiumInsightsGlobal/deploySettings/ensureDb2InstallPlacement\", \"value\": false}]'"
 
-- name: Wait for successful GI deployment (takes 40-80 minutes) - 3.3.0 BUG
+- name: Wait for successful GI deployment (takes 40-80 minutes) - 3.3.5 BUG
   shell:
     cmd: "../funcs/scripts/check_gi_deployment_success.sh {{ gi_namespace }} {{ gi_version }}"
   register: gi_deployment_status
